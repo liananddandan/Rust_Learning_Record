@@ -96,3 +96,18 @@ This project demonstrates:
 ```bash
 cargo run
 ```
+
+# 07 - Managing Projects
+
+This project demonstrates how to:
+
+- Organize code into modules and submodules
+- Use `mod` and `pub mod` to control visibility
+- Re-export with `pub use` to simplify public APIs
+- Use `super::` and `crate::` paths
+
+## Run
+
+```bash
+cargo run
+```
