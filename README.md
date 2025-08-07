@@ -66,3 +66,18 @@ This project demonstrates key concepts in Rust's ownership system:
 ```bash
 cargo run
 ```
+
+# 05 - Using Structs to Structure Related Data
+
+This project demonstrates:
+
+- Creating and updating structs
+- Using field init shorthand and struct update syntax
+- Tuple structs and unit-like structs
+- Implementing methods and associated functions (`impl`)
+
+## Run
+
+```bash
+cargo run
+```
