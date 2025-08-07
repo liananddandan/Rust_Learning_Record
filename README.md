@@ -37,3 +37,17 @@ This project implements a simple number guessing game in Rust.
 ```bash
 cargo run
 ```
+# 03 - Common Programming Concepts
+
+This project demonstrates core Rust programming concepts:
+
+- Variables and Mutability
+- Data Types (scalar and compound)
+- Functions and return values
+- Control Flow (if, loop, for)
+
+## Run
+
+```bash
+cargo run
+```
