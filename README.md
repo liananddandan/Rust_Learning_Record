@@ -81,3 +81,18 @@ This project demonstrates:
 ```bash
 cargo run
 ```
+
+# 06 - Enums and Pattern Matching
+
+This project demonstrates:
+
+- Defining enums with and without associated data
+- Using `Option<T>` and matching on it
+- Pattern matching with `match`
+- Using enum variants to store structured data
+
+## Run
+
+```bash
+cargo run
+```
