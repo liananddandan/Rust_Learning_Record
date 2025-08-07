@@ -18,6 +18,7 @@ cargo check
 
 # Clean up target directory
 cargo clean
+```
 
 
 # 02 - Programming a Guessing Game
@@ -35,3 +36,4 @@ This project implements a simple number guessing game in Rust.
 
 ```bash
 cargo run
+```
