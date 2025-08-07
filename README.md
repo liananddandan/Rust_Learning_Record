@@ -51,3 +51,18 @@ This project demonstrates core Rust programming concepts:
 ```bash
 cargo run
 ```
+
+# 04 - Understanding Ownership
+
+This project demonstrates key concepts in Rust's ownership system:
+
+- Move semantics
+- Borrowing and references
+- Mutable and immutable references
+- Slices and string manipulation
+
+## Run
+
+```bash
+cargo run
+```
