@@ -111,3 +111,29 @@ This project demonstrates how to:
 ```bash
 cargo run
 ```
+
+# Chapter 8: Common Collections in Rust
+
+This project demonstrates the usage of Rust's three main collection types introduced in Chapter 8 of *The Rust Programming Language*:
+
+- `Vec<T>`: growable vectors
+- `String`: UTF-8 encoded string type
+- `HashMap<K, V>`: key-value store
+
+Each collection type is covered in a dedicated module with clear examples and explanations.
+
+---
+
+- `main.rs`: Entry point, calls each module in turn
+- `vec_examples.rs`: Demonstrates operations on vectors (creation, borrowing, iteration, mutation)
+- `string_examples.rs`: Explores string manipulation and UTF-8 slicing
+- `hashmap_examples.rs`: Covers insertion, access, ownership, and counting words with `HashMap`
+
+---
+
+## Run
+
+```bash
+cargo run
+```
+
