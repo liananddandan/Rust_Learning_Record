@@ -160,3 +160,28 @@ src/
 cargo run
 ```
 
+
+# Chapter 10 - Generics, Traits, and Lifetimes
+
+This Rust learning project demonstrates the key concepts from **Chapter 10** of *The Rust Programming Language*:
+
+- **Generics**: Generic functions, structs, enums, and trait bounds
+- **Traits**: Defining traits, default methods, implementing traits for types, and trait objects
+- **Lifetimes**: Preventing dangling references, lifetime annotations, and the `'static` lifetime
+
+---
+
+## 📂 Project Structure
+
+ch10_generics_traits_lifetimes/
+├── Cargo.toml
+└── src/
+├── main.rs # Entry point, runs examples from other modules
+├── generics.rs # Generic functions, structs, and trait bounds
+├── traits_demo.rs # Trait definition, default methods, impl Trait
+├── trait_objects.rs # Using trait objects and dynamic dispatch
+└── lifetimes.rs # Lifetime annotations and examples
+
+```bash
+cargo run
+```
