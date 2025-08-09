@@ -137,3 +137,26 @@ Each collection type is covered in a dedicated module with clear examples and ex
 cargo run
 ```
 
+# Chapter 9 — Error Handling (Rust)
+
+This crate demonstrates the two big categories of errors in Rust:
+
+- **Unrecoverable errors** via `panic!` (program aborts)
+- **Recoverable errors** via `Result<T, E>` (you decide how to handle them)
+
+It also shows the `?` operator for **error propagation**, and the difference between
+`unwrap`, `expect`, and explicit `match`.
+
+## Project Layout
+src/
+├── main.rs # Calls each example module
+├── panic_examples.rs # panic! and out-of-bounds access
+├── result_examples.rs # Result + match, unwrap, expect, IO error kinds
+└── propagation.rs # Propagating errors with ? and tests
+
+## Run
+
+```bash
+cargo run
+```
+
