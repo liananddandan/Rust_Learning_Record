@@ -185,3 +185,48 @@ ch10_generics_traits_lifetimes/
 ```bash
 cargo run
 ```
+
+ # Chapter 11 — Testing (Rust)
+
+ This crate demonstrates Rust's testing ecosystem:
+ - Unit tests with `#[cfg(test)]` inside `src/`
+ - Integration tests in the `tests/` directory
+ - Assertions: `assert!`, `assert_eq!`, `assert_ne!`
+ - Panic tests with `#[should_panic]`
+ - Result-based tests (returning `Result<(), E>`)
+ - Ignored tests with `#[ignore]`
+ - Testing private functions from unit tests
+
+ ## Project Layout
+
+ ```
+ ch11-testing/
+ ├── Cargo.toml
+ ├── README.md
+ └── src/
+     ├── lib.rs            # Library code + unit tests module
+     └── main.rs           # Optional binary entry; tests live in lib
+ └── tests/
+     ├── integration_basic.rs
+     └── common/
+         └── mod.rs        # Shared helpers for integration tests
+ ```
+
+ > **Tip:** Most real projects put testable logic in `lib.rs` so it can be imported
+ > from both unit tests and integration tests. `main.rs` is kept thin.
+
+ ## Run Tests
+
+ ```bash
+ cargo test                   # run all tests (unit + integration)
+ cargo test add_works         # run tests whose names match a filter
+ cargo test -- --ignored      # include ignored tests
+ cargo test -- --nocapture    # show `println!` output during tests
+ cargo test -- --test-threads=1  # run tests on a single thread
+ ```
+
+ ## Notes
+ - Use `#[should_panic(expected = "...")]` to assert on panic messages.
+ - Prefer returning `Result<(), E>` in tests when failure reasons are dynamic.
+ - Integration tests compile as separate crates and import your library by package name.
+ - Unit tests can access private items; integration tests cannot.
